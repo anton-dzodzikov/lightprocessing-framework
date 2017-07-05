@@ -1,8 +1,19 @@
+buildscript {
+    dependencies {
+        classpath('gradle.plugin.com.boxfuse.client:flyway-release:4.1.1')
+    }
+}
+
 apply plugin: 'groovy'
+apply plugin: 'org.flywaydb.flyway'
 
 dependencies {
     compile project(':common')
 
     compile 'org.codehaus.groovy:groovy-all:2.4.11'
     compile 'org.springframework.boot:spring-boot-starter-data-jpa:1.5.3.RELEASE'
+}
+
+processResources {
+    expand(project.properties)
 }
