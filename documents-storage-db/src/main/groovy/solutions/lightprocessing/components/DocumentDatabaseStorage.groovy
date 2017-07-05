@@ -1,4 +1,4 @@
-package solutions.lightprocessing.documents.storage
+package solutions.lightprocessing.components
 
 import org.springframework.stereotype.Service
 import solutions.lightprocessing.common.documents.DocumentStorage
