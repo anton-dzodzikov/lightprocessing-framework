@@ -1,0 +1,9 @@
+rootProject.name = 'lightprocessing-framework'
+include 'common'
+include 'core'
+include 'operations-storage-fs'
+include 'operations-storage-db'
+include 'operations-executor'
+include 'documents-storage-fs'
+include 'documents-storage-db'
+
